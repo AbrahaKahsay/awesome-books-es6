@@ -8,3 +8,14 @@ const contactInformation = document.getElementById('cont-info');
 const list = document.getElementById('list');
 const addNew = document.getElementById('add-new');
 const contact = document.getElementById('contact');
+
+const addNewPage = () => {
+    addNew.addEventListener('click', (e) => {
+    e.target.classList.add('active');
+    addBookContainer.classList.remove('hide');
+    list.classList.remove('active');
+    bookContainer.classList.add('hide');
+    contact.classList.remove('active');
+    contactInformation.classList.add('hide');
+  });
+}
