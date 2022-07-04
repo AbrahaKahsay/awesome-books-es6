@@ -1,14 +1,15 @@
 
-const addBk= () => {
-    addBook(book) {
-    this.books.push(book);
-    localStorage.setItem('books', JSON.stringify(this.books));
-    return book;
-  }
+
+const addBk = () => {
+    addBook = (book)=>{
+        this.books.push(book);
+        localStorage.setItem('books', JSON.stringify(this.books));
+        return book;
+    }
 }
 
 const removeBtn = ()=> {
-    createRemoveBtn(){
+    createRemoveBtn=()=>{
         const removeBtn = document.createElement('button');
         removeBtn.textContent = 'Remove';
         removeBtn.addEventListener('click', (e) => {
@@ -28,7 +29,7 @@ const removeBtn = ()=> {
 
 const addBkToDisplay = () => {
     // Add a book to the application interface
-    addBkToInterface(book) {
+    addBkToInterface = (book) => {
     // create div element to hold the title & author
     const newBook = document.createElement('div');
     newBook.setAttribute('id', book.id);
@@ -51,6 +52,6 @@ const addBkToDisplay = () => {
     bookList.append(newBook);
     return newBook;
     }
-};
+}
 
 export {addBk, removeBtn, addBkToDisplay};
