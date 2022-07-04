@@ -24,5 +24,30 @@ const removeBtn = ()=> {
         return removeBtn;
       }
 }
-
+const addBkToDisplay= ()=>{
+    // Add a book to the application interface
+    addBkToInterface(book) {
+        // create div element to hold the title & author
+        const newBook = document.createElement('div');
+        newBook.setAttribute('id', book.id);
+        // create title div
+        const title = document.createElement('p');
+        title.textContent = `"${book.title}"`;
+        newBook.appendChild(title);
+    
+        const by = document.createElement('p');
+        by.textContent = 'by';
+        newBook.appendChild(by);
+    
+        //  create author div
+        const author = document.createElement('p');
+        author.textContent = book.author;
+        newBook.appendChild(author);
+        // Add a remove button to the book div
+        newBook.appendChild(this.createRemoveBtn());
+        //  create a horizontal rule & append to div
+        bookList.append(newBook);
+        return newBook;
+      }
+    }
     
