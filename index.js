@@ -1,6 +1,6 @@
 
 import {addBk, removeBtn, addBkToDisplay} from "./modules/methods.js"
-import addButton from "./modules/add.js"
+import {addButton} from "./modules/add.js"
 import {addNewPage, listPage, contactPage} from "./modules/navigation.js"
 
 class Book {
@@ -21,9 +21,6 @@ class UI {
 
     addBkToDisplay();
 }
-
-const addBtn = document.getElementById('add-btn');
-const ui = new UI();
 
 addButton();
 
