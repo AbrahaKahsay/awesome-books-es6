@@ -14,8 +14,7 @@ class UI {
 
     removeBtn;
 
-    
-  
-    
+    addBkToDisplay;
+}
   const addBtn = document.getElementById('add-btn');
   const ui = new UI();

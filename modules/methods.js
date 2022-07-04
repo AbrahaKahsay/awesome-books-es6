@@ -50,4 +50,5 @@ const addBkToDisplay= ()=>{
         return newBook;
       }
     }
-    
+
+export {addBk, removeBtn, addBkToDisplay};
