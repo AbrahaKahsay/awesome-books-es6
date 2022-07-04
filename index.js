@@ -1,16 +1,21 @@
 import { addNewPage, listPage, contactPage } from './modules/navigation.js';
 import Book from './modules/classes.js';
-import formattedDate from './modules/date.js';
+import { DateTime } from './modules_luxon/luxon.js';
 
 /* eslint-disable max-classes-per-file */
 const bookList = document.getElementById('booklist');
-const dateDiv = document.getElementById('date');
+const dateDiv = document.getElementById('nav-date');
 
 addNewPage();
 listPage();
 contactPage();
 
+const date = DateTime.now();
+const formattedDate = `${date.monthLong} ${date.day}th ${
+  date.year
+}, ${date.toLocaleString(DateTime.TIME_WITH_SECONDS)}`;
 dateDiv.innerHTML = formattedDate;
+
 class UI {
   books = [];
 
@@ -69,22 +74,6 @@ addBtn.addEventListener('click', () => {
   const author = document.getElementById('author').value;
   const title = document.getElementById('title').value;
 
-  if (author && title) {
-    // add book to array
-    const book = new Book(title, author, ui.books.length + 1);
-    ui.addBook(book);
-    // add book to the interface
-    ui.addBkToInterface(book);
-    // clear the form fields
-    document.getElementById('author').value = '';
-    document.getElementById('title').value = '';
-  }
-  // if any field is empty, do nothing
-});
-
-addBtn.addEventListener('click', () => {
-  const author = document.getElementById('author').value;
-  const title = document.getElementById('title').value;
   if (author && title) {
     // add book to array
     const book = new Book(title, author, ui.books.length + 1);

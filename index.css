@@ -91,7 +91,7 @@ nav p {
   color: black;
 }
 
-div#date {
+div#nav-date {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
