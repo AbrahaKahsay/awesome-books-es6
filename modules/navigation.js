@@ -40,3 +40,5 @@ const contactPage = ()=>{
         addBookContainer.classList.add('hide');
       });
     }
+
+    export {addNewPage, listPage, contactPage};
