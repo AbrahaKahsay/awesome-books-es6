@@ -11,11 +11,22 @@ const contact = document.getElementById('contact');
 
 const addNewPage = () => {
     addNew.addEventListener('click', (e) => {
-    e.target.classList.add('active');
-    addBookContainer.classList.remove('hide');
-    list.classList.remove('active');
-    bookContainer.classList.add('hide');
-    contact.classList.remove('active');
-    contactInformation.classList.add('hide');
-  });
+        e.target.classList.add('active');
+        addBookContainer.classList.remove('hide');
+        list.classList.remove('active');
+        bookContainer.classList.add('hide');
+        contact.classList.remove('active');
+        contactInformation.classList.add('hide');
+    });
 }
+
+const listPage = () => {
+    list.addEventListener('click', (e) => {
+        e.target.classList.add('active');
+        bookContainer.classList.remove('hide');
+        addNew.classList.remove('active');
+        addBookContainer.classList.add('hide');
+        contact.classList.remove('active');
+        contactInformation.classList.add('hide');
+      });
+    } 
