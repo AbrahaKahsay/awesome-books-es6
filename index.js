@@ -5,3 +5,17 @@ class Book {
       this.id = id;
     }
   }
+
+
+class UI {
+    books = [];
+
+    addBk;
+
+    removeBtn;
+
+    
+  
+    
+  const addBtn = document.getElementById('add-btn');
+  const ui = new UI();
