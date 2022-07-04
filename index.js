@@ -10,11 +10,18 @@ class Book {
 class UI {
     books = [];
 
-    addBk;
+    addBk();
 
-    removeBtn;
+    removeBtn();
 
-    addBkToDisplay;
+    addBkToDisplay();
 }
   const addBtn = document.getElementById('add-btn');
   const ui = new UI();
+  
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (!localStorage.getItem('books')) return;
+    const books = JSON.parse(localStorage.getItem('books'));
+    books.forEach((book) => ui.addBkToInterface(book));
+});
