@@ -1,3 +1,4 @@
+
 const addBk= () => {
     addBook(book) {
     this.books.push(book);
@@ -24,7 +25,8 @@ const removeBtn = ()=> {
         return removeBtn;
       }
 }
-const addBkToDisplay= ()=>{
+
+const addBkToDisplay = () => {
     // Add a book to the application interface
     addBkToInterface(book) {
     // create div element to hold the title & author
@@ -49,6 +51,6 @@ const addBkToDisplay= ()=>{
     bookList.append(newBook);
     return newBook;
     }
-}
+};
 
 export {addBk, removeBtn, addBkToDisplay};

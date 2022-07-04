@@ -1,5 +1,5 @@
 
-const addButton = ()=>{
+export default addButton = ()=>{
     addBtn.addEventListener('click', () => {
         const author = document.getElementById('author').value;
         const title = document.getElementById('title').value;

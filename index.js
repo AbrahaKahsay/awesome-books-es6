@@ -1,3 +1,8 @@
+
+import {addBk, removeBtn, addBkToDisplay} from "./modules/methods.js"
+import addButton from "./modules/add.js"
+import {addNewPage, listPage, contactPage} from "./modules/navigation.js"
+
 class Book {
     constructor(title, author, id) {
       this.title = title;
