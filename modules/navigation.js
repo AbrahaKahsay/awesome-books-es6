@@ -1,5 +1,4 @@
 const bookList = document.getElementById('booklist');
-const dateDiv = document.getElementById('date');
 
 const bookContainer = document.getElementById('book-con');
 const addBookContainer = document.getElementById('add-book');
@@ -19,6 +18,7 @@ const addNewPage = () => {
     contactInformation.classList.add('hide');
   });
 };
+addNewPage();
 
 const listPage = () => {
   list.addEventListener('click', (e) => {
@@ -30,6 +30,8 @@ const listPage = () => {
     contactInformation.classList.add('hide');
   });
 };
+listPage();
+
 const contactPage = () => {
   contact.addEventListener('click', (e) => {
     e.target.classList.add('active');
@@ -40,5 +42,6 @@ const contactPage = () => {
     addBookContainer.classList.add('hide');
   });
 };
+contactPage();
 
 export { addNewPage, listPage, contactPage };
