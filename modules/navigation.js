@@ -1,5 +1,3 @@
-const bookList = document.getElementById('booklist');
-
 const bookContainer = document.getElementById('book-con');
 const addBookContainer = document.getElementById('add-book');
 const contactInformation = document.getElementById('cont-info');

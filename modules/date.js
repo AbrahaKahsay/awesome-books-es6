@@ -1,4 +1,4 @@
-import { DateTime } from '../../node_modules/luxon/build/es6/luxon.js';
+import { DateTime } from "../node_modules/luxon/build/es6/luxon.js";
 
 const date = DateTime.now();
 const formattedDate = `${date.monthLong} ${date.day}th ${
