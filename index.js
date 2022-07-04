@@ -14,11 +14,8 @@ class Book {
 
 class UI {
     books = [];
-
-    addBk();
-
+    addBk()
     removeBtn();
-
     addBkToDisplay();
 }
 
