@@ -1,7 +1,7 @@
 
-// import {addBk, rmvBtn, addBkToDisplay} from "./modules/methods.js"
 import {addNewPage, listPage, contactPage} from "./modules/navigation.js"
 import Book from "./modules/classes.js"
+import formattedDate from "./modules/date.js"
 
 
 /* eslint-disable max-classes-per-file */
@@ -12,27 +12,7 @@ addNewPage();
 listPage();
 contactPage();
 
-class MyTime {
-  nth = (d) => {
-    if (d > 3 && d < 21) return 'th';
-    switch (d % 10) {
-      case 1: return 'st';
-      case 2: return 'nd';
-      case 3: return 'rd';
-      default: return 'th';
-    }
-  }
-
-  formatedTime = () => {
-    const date = new Date();
-    const [hr, pm] = date.toLocaleString('en-US', { hour: 'numeric', hour12: true }).toString().split(' ');
-    const timeString = `${date.toLocaleString('default', { month: 'long' })} ${date.getDate()}${this.nth(date.getDate())} ${date.getFullYear()} ${hr}:${date.getMinutes()}:${date.getSeconds()} ${pm.toLowerCase()}`;
-    return timeString;
-  }
-}
-
-const appTime = new MyTime();
-setInterval(() => { dateDiv.textContent = appTime.formatedTime(); }, 1000);
+dateDiv.innerHTML = formattedDate;
 
 Book;
 class UI {
