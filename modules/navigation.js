@@ -30,3 +30,13 @@ const listPage = () => {
         contactInformation.classList.add('hide');
       });
     } 
+const contactPage = ()=>{
+    contact.addEventListener('click', (e) => {
+        e.target.classList.add('active');
+        contactInformation.classList.remove('hide');
+        list.classList.remove('active');
+        bookContainer.classList.add('hide');
+        addNew.classList.remove('active');
+        addBookContainer.classList.add('hide');
+      });
+    }
