@@ -16,9 +16,11 @@ class UI {
 
     addBkToDisplay();
 }
-  const addBtn = document.getElementById('add-btn');
-  const ui = new UI();
-  
+
+const addBtn = document.getElementById('add-btn');
+const ui = new UI();
+
+addButton();
 
 document.addEventListener('DOMContentLoaded', () => {
     if (!localStorage.getItem('books')) return;
