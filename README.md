@@ -3,7 +3,7 @@
 # awesome-books-es6
 In this project, the Awesome books app code is restructured. The goal is to make it more organized by using modules and ES6 syntax.
 ## Screenshot
-
+![awesome-book-es6](https://user-images.githubusercontent.com/75738563/177220910-cfccbfd8-a7fc-4b84-9434-431327f99f15.png)
 
 ## Built with
 
@@ -70,7 +70,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-**[FOLLOW THIS LINK TO SEE THE LIVE DEMO](https://)**
+**[FOLLOW THIS LINK TO SEE THE LIVE DEMO](https://abrahakahsay.github.io/awesome-books-es6/)**
 
 ## 📝 License
 
